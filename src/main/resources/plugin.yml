@@ -1,0 +1,7 @@
+name: NoHungerReloaded
+version: '${project.version}'
+main: com.mcstaralliance.nohungerreloaded.NoHungerReloaded
+api-version: '1.18'
+
+commands:
+  nohunger:

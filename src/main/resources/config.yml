@@ -1,0 +1,4 @@
+no-hunger-on-message: 永不饥饿已开启。
+no-hunger-off-message: 永不饥饿已关闭。
+no-hunger-reload-message: '[NoHunger]Configuration reloaded!'
+no-hunger-player:
