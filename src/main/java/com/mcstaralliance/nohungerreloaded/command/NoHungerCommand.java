@@ -35,8 +35,8 @@ public class NoHungerCommand implements CommandExecutor, TabCompleter {
                     ConfigManager.addNoHunger(name);
                     player.sendMessage(ConfigManager.getNoHungerOnMessage());
                     player.setFoodLevel(20);
-                    break;
                 }
+                return true;
 
             case "reload":
                 if (!player.isOp()) {

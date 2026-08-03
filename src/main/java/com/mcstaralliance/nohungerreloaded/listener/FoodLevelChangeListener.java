@@ -22,6 +22,10 @@ public class FoodLevelChangeListener implements Listener {
         if (!ConfigManager.getNoHungerList().contains(name)) {
             return;
         }
+        // 取消事件以防止饱食度变化
+        event.setCancelled(true);
+        // 确保饱食度始终为满值
         player.setFoodLevel(20);
+        player.setSaturation(20.0f);
     }
 }
