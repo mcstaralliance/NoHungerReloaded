@@ -24,8 +24,8 @@ public class NoHungerCommand implements CommandExecutor, TabCompleter {
         switch (args[0]) {
             case "switch":
                 if (!player.hasPermission("nohunger.switch")) {
-                    player.sendMessage(ChatColor.RED + "你没有使用此命令的权限。");
-                    return true;
+                    player.sendMessage(ChatColor.RED + "你没有使用此 switch 命令的权限。");
+                    break;
                 }
                 String name = player.getName();
                 if (ConfigManager.getNoHungerList().contains(name)) {
@@ -40,7 +40,7 @@ public class NoHungerCommand implements CommandExecutor, TabCompleter {
 
             case "reload":
                 if (!player.isOp()) {
-                    player.sendMessage(ChatColor.RED + "你没有使用此命令权限。");
+                    player.sendMessage(ChatColor.RED + "你没有使用此 reload 命令权限。");
                     return false;
                 }
                 plugin.reloadConfig();
